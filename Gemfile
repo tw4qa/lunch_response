@@ -42,5 +42,12 @@ group :development, :test do
 
   # rspec
   gem 'rspec-rails'
+
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'pry'
 end
+
+gem 'slim-rails'
+
 

@@ -1,0 +1,1 @@
+Fire.setup(firebase_path: 'https://luminous-torch-5550.firebaseio.com/v1')

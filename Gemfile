@@ -50,4 +50,4 @@ end
 
 gem 'slim-rails'
 
-
+gem 'fire-model'

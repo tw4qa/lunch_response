@@ -3,7 +3,7 @@ h1#question.text-align Do you like today's lunch?
 
 div.main-form
   form action="/feedback" method="post"
-    div.icons
+    div.icons#status
       input.dis-non type="radio" name="vote" id="worst" value="0"
       label for="worst"
         img.icon-img src="worst_meal.png" alt="I was very bad" title="Worst"
@@ -29,7 +29,7 @@ div.main-form
       label for="comment"
       textarea.form-control.form-inputs.text-areas id="comment" name='comment' placeholder="Comment"
     div
-      input#response-btn.btn.btn-success.mr-top.submit-button type="submit" value="LEAVE YOUR RESPONSE" name="LEAVE YOUR RESPONSE"
+      input#response-btn type="submit" value="LEAVE YOUR RESPONSE" name="LEAVE YOUR RESPONSE" disabled="true"
 
 javascript:
   $(".icons label").click(function() {$('label').removeClass('selected-vote'); $(this).addClass('selected-vote');});

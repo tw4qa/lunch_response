@@ -3,9 +3,6 @@ h1#question.text-align Do you like today's lunch?
 
 div.main-form
   form action="/feedback" method="post"
-    div
-      label for="user_name"
-      input.form-control.form-inputs id="user_name" name='user_name' placeholder="Your Name"
     div.icons
       input.dis-non type="radio" name="vote" id="worst" value="worst"
       label for="worst"
@@ -25,6 +22,9 @@ div.main-form
       input.dis-non type="radio" name="vote" id="lovely" value="lovely"
       label for="lovely"
         img.icon-img src="lovely_meal.png" alt="I was very good" title="Just lovely"
+    div
+      label for="user_name"
+      input.form-control.form-inputs id="user_name" name='user_name' placeholder="Your Name"
     div
       label for="comment"
       textarea.form-control.form-inputs.text-areas id="comment" name='comment' placeholder="Comment"

@@ -1,16 +1,19 @@
 javascript:
-  $(Statistic);
+  json = [ [ 'Happy', 12 ], [ 'So so', 25 ] ];
+  $(function(){
+    new Statistic(json);
+  });
 
-h1 Statistics
 #statistics
   .row
+    h1.title.phrase Statistics
+  .row
     .col-md-4
-      .container#meal-date-picker-conainer
+      #meal-date-picker-conainer
         .col-sm-6
           .form-group
             .row
-              .col-md-8
-                #meal-date-picker
+              #meal-date-picker
 
     .col-md-8
       #statistic-chart-container

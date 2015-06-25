@@ -1,1 +1,31 @@
-h2 Welcome
+h1.text-align Welcome dear employee. Do you like today's lunch?
+
+div.main-form
+  form action="/feedback" method="post"
+    div
+      label for="user_name" Your Name
+      input.form-control.form-inputs id="user_name" name='user_name'
+    div.icons
+      input.dis-non type="radio" name="vote" id="worst" value="worst"
+      label for="worst"
+        img src="worst_meal.png" alt="I was very bad"
+      input.dis-non type="radio" name="vote" id="bad" value="bad"
+      label for="bad"
+        img src="bad_meal.png" alt="I was bad"
+      input.dis-non type="radio" name="vote" id="so_so" value="so so"
+      label for="so_so"
+        img src="so_so_meal.png" alt="I was so so.."
+      input.dis-non type="radio" name="vote" id="not_bad" value="Not bad"
+      label for="not_bad"
+        img src="not_bad_meal.png" alt="I was not bad"
+      input.dis-non type="radio" name="vote" id="good" value="good"
+      label for="good"
+        img src="good_meal.png" alt="I was good"
+    div
+      label for="comment"  Comment
+      textarea.form-control.form-inputs id="comment" name='comment'
+    div
+      input.btn.btn-success.mr-top.submit-button type="submit" value="LEAVE YOUR RESPONSE" name="LEAVE YOUR RESPONSE"
+
+javascript:
+  $("label").click(function() {$('label').removeClass('selected-vote'); $(this).addClass('selected-vote');});

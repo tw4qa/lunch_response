@@ -8,19 +8,22 @@ div.main-form
     div.icons
       input.dis-non type="radio" name="vote" id="worst" value="worst"
       label for="worst"
-        img src="worst_meal.png" alt="I was very bad"
+        img.icon-img src="worst_meal.png" alt="I was very bad" title="Worst"
       input.dis-non type="radio" name="vote" id="bad" value="bad"
       label for="bad"
-        img src="bad_meal.png" alt="I was bad"
+        img.icon-img src="bad_meal.png" alt="I was bad" title="Bad"
       input.dis-non type="radio" name="vote" id="so_so" value="so so"
       label for="so_so"
-        img src="so_so_meal.png" alt="I was so so.."
+        img.icon-img src="so_so_meal.png" alt="I was so so.." title="So so"
       input.dis-non type="radio" name="vote" id="not_bad" value="Not bad"
       label for="not_bad"
-        img src="not_bad_meal.png" alt="I was not bad"
+        img.icon-img src="not_bad_meal.png" alt="I was not bad" title="Not bad"
       input.dis-non type="radio" name="vote" id="good" value="good"
       label for="good"
-        img src="good_meal.png" alt="I was good"
+        img.icon-img src="good_meal.png" alt="I was good" title="Good"
+      input.dis-non type="radio" name="vote" id="lovely" value="lovely"
+      label for="lovely"
+        img.icon-img src="lovely_meal.png" alt="I was very good" title="Just lovely"
     div
       label for="comment"  Comment
       textarea.form-control.form-inputs id="comment" name='comment'
@@ -28,4 +31,5 @@ div.main-form
       input.btn.btn-success.mr-top.submit-button type="submit" value="LEAVE YOUR RESPONSE" name="LEAVE YOUR RESPONSE"
 
 javascript:
-  $("label").click(function() {$('label').removeClass('selected-vote'); $(this).addClass('selected-vote');});
+  $(".icons label").click(function() {$('label').removeClass('selected-vote'); $(this).addClass('selected-vote');});
+  //$(".icons label").hover(function() {$('label').removeClass('hovered-vote'); $(this).addClass('hovered-vote');});

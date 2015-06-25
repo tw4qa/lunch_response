@@ -42,6 +42,7 @@
   width: 400px;
   display: inline-block;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .mr-top{
@@ -63,9 +64,21 @@
 }
 
 .icons{
-  margin-left: 50px;
+  margin-left: 75px;
 }
 
 .selected-vote {
   border: groove;
+  border-radius: 40px 40px 40px 40px;
+}
+
+.hovered-vote {
+  width: 58px;
+  height: 58px;
+}
+
+.icon-img {
+  width: 55px;
+  height: 55px;
+  margin: 5px;
 }

@@ -16,6 +16,18 @@
 
 @import "bootstrap";
 
+#welcome {
+  color: rgb(80, 168, 80);
+}
+
+#question {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(80, 168, 80);
+  padding: 20px;
+  font-size: 67px;
+}
+
 .input_hidden {
     position: absolute;
     left: -9999px;
@@ -39,10 +51,11 @@
 }
 
 .form-inputs {
-  width: 400px;
+  width: 600px;
   display: inline-block;
-  margin-left: 10px;
   margin-bottom: 5px;
+  font-size: 24px;
+  padding: 29px;
 }
 
 .mr-top{
@@ -57,19 +70,26 @@
   text-align: center;
 }
 
-.submit-button{
-  width: 400px;
-  margin-left: 74px;
-  height: 50px;
+#response-btn{
+  width: 600px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(188, 224, 188);
+  &:hover {
+    color: rgb(214, 224, 210);
+  }
 }
 
 .icons{
-  margin-left: 75px;
+ // margin-left: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .selected-vote {
   border: groove;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 50px 50px 50px 50px;
 }
 
 .hovered-vote {
@@ -78,7 +98,11 @@
 }
 
 .icon-img {
-  width: 55px;
-  height: 55px;
-  margin: 5px;
+  width: 85px;
+  height: 85px;
+  margin: 10px;
+}
+
+.text-areas{
+  height: 80px;
 }

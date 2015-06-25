@@ -1,0 +1,13 @@
+h3 All votes
+table.table
+  tr
+    th Employee
+    th Vote
+    th Date
+    th Comment
+  - for vote in @votes
+    tr
+      td=vote.user_name
+      td=vote.vote
+      td="#{vote.day}/#{vote.month}/#{vote.year}"
+      td=vote.comment

@@ -3,7 +3,7 @@ h1#question.text-align Do you like today's lunch?
 
 div.main-form
   form action="/feedback" method="post"
-    div.icons
+    div.icons#status
       input.dis-non type="radio" name="vote" id="worst" value="0"
       label for="worst"
         img.icon-img src="worst_meal.png" alt="I was very bad" title="Worst"
@@ -19,9 +19,9 @@ div.main-form
       input.dis-non type="radio" name="vote" id="good" value="4"
       label for="good"
         img.icon-img src="good_meal.png" alt="I was good" title="Good"
-      input.dis-non type="radio" name="vote" id="lovely" value="5"
-      label for="lovely"
-        img.icon-img src="lovely_meal.png" alt="I was very good" title="Just lovely"
+      input.dis-non type="radio" name="vote" id="best" value="5"
+      label for="best"
+        img.icon-img src="lovely_meal.png" alt="I was very good" title="The best lunch ever"
     div
       label for="user_name"
       input.form-control.form-inputs id="user_name" name='user_name' placeholder="Your Name"
@@ -29,7 +29,7 @@ div.main-form
       label for="comment"
       textarea.form-control.form-inputs.text-areas id="comment" name='comment' placeholder="Comment"
     div
-      input#response-btn.btn.btn-success.mr-top.submit-button type="submit" value="LEAVE YOUR RESPONSE" name="LEAVE YOUR RESPONSE"
+      input#response-btn type="submit" value="LEAVE YOUR RESPONSE" name="LEAVE YOUR RESPONSE" disabled="true"
 
 javascript:
   $(".icons label").click(function() {$('label').removeClass('selected-vote'); $(this).addClass('selected-vote');});

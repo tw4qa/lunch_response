@@ -5,6 +5,6 @@ class StatisticsController < ApplicationController
     month = params[:month]
     day = params[:day]
 
-    @statistic = Statistic.new
+    @statistic = Statistic.new(year: year)
   end
 end

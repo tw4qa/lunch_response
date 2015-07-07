@@ -77,17 +77,18 @@
   }
 }
 
-.icons{
- // margin-left: 75px;
+.icons {
   margin-top: 10px;
   margin-bottom: 10px;
+  label {
+    cursor: pointer;
+  }
 }
 
 .selected-vote, .icons label:checked img {
   background: rgb(220, 244, 220);
   border-radius: 56px;
-  //border: groove;
-  //border-radius: 50px 50px 50px 50px;
+  transition: background-color 0.5s linear;
 }
 
 .hovered-vote {

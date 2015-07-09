@@ -1,9 +1,9 @@
 class Statistic
 
   def initialize(opts)
-    @year = opts[:year]
-    @month = opts[:month]
-    @day = opts[:day]
+    @year = opts[:year].to_i
+    @month = opts[:month].to_i
+    @day = opts[:day].to_i
   end
 
   def calculate!

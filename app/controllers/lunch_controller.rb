@@ -1,6 +1,7 @@
 class LunchController < ApplicationController
 
   def show
+    @time = Time.now
   end
 
   def feedback
@@ -12,6 +13,7 @@ class LunchController < ApplicationController
   end
 
   def thanks_for_response
+    @time = Time.now
   end
 
   def votes_list

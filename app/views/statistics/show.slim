@@ -1,8 +1,10 @@
 javascript:
-  json = [ [ 'Happy', 12 ], [ 'So so', 25 ] ];
   $(function(){
-    new Statistic(json);
+   new Statistic(#{@statistic.votes_stats.to_a.to_json.html_safe});
   });
+
+a href='/'
+  img.lets-vote src="/lets-vote1.png" title="Let's vote!"
 
 #statistics
   .row
